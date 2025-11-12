@@ -1,0 +1,71 @@
+body {
+  background-image: url("dashboard-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: 'Segoe UI', sans-serif;
+  color: #1a1a1a;
+  position: relative;
+  z-index: 1;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.55);
+  z-index: -1;
+}
+
+.overlay {
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+
+header {
+  background: linear-gradient(90deg, #0066cc, #004a99);
+  color: white;
+  padding: 15px 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+header h2 {
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 28px;
+  color: #fdfdfd;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.92);
+  border-radius: 18px;
+  border: none;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+h3.card-title {
+  font-weight: 700;
+  background: linear-gradient(90deg, #004a99, #0099cc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.form-label {
+  font-weight: bold;
+  color: #003d73;
+}
+
+.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 8px rgba(13, 110, 253, 0.3);
+}
+
+.table-primary {
+  background-color: #b3daff !important;
+}

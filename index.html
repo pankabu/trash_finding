@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trash Finding System</title>
+  <link rel="stylesheet" href="index-style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Trash Finding System</h1>
+    <nav>
+      <a href="#">About</a>
+     <!---- <div>
+        <h3>About Trash Finding System</h3>
+        <p>Trash Finding System is a smart, community-driven platform designed to make our cities cleaner and healthier. Citizens can quickly report litter, illegal dumping, or overflowing trash bins, while administrators and cleaning staff can efficiently track, manage, and resolve these reports. 
+          By connecting the community with local authorities in real-time, our system empowers everyone to take part in keeping their environment green, safe, and sustainable. 
+          Together, we can build cleaner, more vibrant neighborhoods for all.</p>
+      </div> -->
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="overlay">
+      <h2>Keep Your City Clean</h2>
+      <p>Report trash instantly and help your city stay green & healthy!</p>
+      <button id="getStarted" class="btn">Get Started</button>
+
+      <div class="role-selection" id="roleSelection">
+        <h3>Select Your Role</h3>
+        <button onclick="location.href='login-citizen.html'">Citizen</button>
+        <button onclick="location.href='login-admin.html'">Admin</button>
+        <button onclick="location.href='login-staff.html'">Cleaning Staff</button>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <footer>
+    <p>© 2025 Trash Finding System | Designed by Team D-60</p>
+  </footer>
+
+    <script>
+    const getStartedBtn = document.getElementById("getStarted");
+    const roleSelection = document.getElementById("roleSelection");
+
+    getStartedBtn.addEventListener("click", () => {
+      roleSelection.style.display = "block";
+      getStartedBtn.style.display = "none";
+    });
+  </script>
+
+</body>
+</html>

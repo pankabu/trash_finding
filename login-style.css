@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #222;
+}
+
+.form-container {
+  width: 380px;
+  margin: 120px auto;
+  background: rgba(230, 245, 255, 0.95);
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 0.6s ease-in-out;
+  backdrop-filter: blur(4px);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #003c8f;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+label {
+  color: #003c8f;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+form input, form button {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+  font-size: 14px;
+}
+
+form input {
+  background: rgba(255, 255, 255, 0.85);
+  color: #00334d;
+  font-weight: 500;
+}
+
+form button {
+  background: linear-gradient(135deg, #005b96, #003f6b);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+  letter-spacing: 1px;
+}
+
+form button:hover {
+  background: linear-gradient(135deg, #003f6b, #002f4d);
+}
+
+p {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 14px;
+  color: #00334d;
+}
+
+p a {
+  color: red;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
